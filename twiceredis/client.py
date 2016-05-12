@@ -238,7 +238,7 @@ class TwiceRedis(object):
 
     """
     generic_error = exceptions.RedisError
-    _sko = {socket.TCP_KEEPIDLE: 1,
+    _sko = { # socket.TCP_KEEPIDLE: 1,
             socket.TCP_KEEPINTVL: 3,
             socket.TCP_KEEPCNT: 5}
     DEFAULT_POOL_KWARGS = {'check_connection': True,
